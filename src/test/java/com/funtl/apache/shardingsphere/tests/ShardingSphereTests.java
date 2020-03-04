@@ -23,7 +23,7 @@ public class ShardingSphereTests {
     @Test
     public void testInsertOrder() {
         Usertest tbOrder = new Usertest();
-        tbOrder.setId(1L);
+        tbOrder.setId(1);
         tbOrder.setName("1211");
 
     }

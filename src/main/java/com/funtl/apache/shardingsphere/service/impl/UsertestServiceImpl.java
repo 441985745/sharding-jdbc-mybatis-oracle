@@ -27,4 +27,9 @@ public class UsertestServiceImpl implements UsertestService {
     public List<Usertest> list() {
         return usertestDao.list();
     }
+
+    @Override
+    public void delete() {
+        usertestDao.delete();
+    }
 }

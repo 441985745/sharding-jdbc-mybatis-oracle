@@ -18,25 +18,25 @@ public class UsertestController {
     @Autowired
     private UsertestDao usertestDao;
 
-    @RequestMapping("/test")
+    @RequestMapping("/insert")
     public String test(){
         List<Usertest> list = new ArrayList<>();
         Usertest u1 = new Usertest();
-        u1.setId(1l);
+        u1.setId(11);
         u1.setName("u1");
         u1.setUserId(1);
         Usertest u2 = new Usertest();
-        u2.setId(2l);
+        u2.setId(12);
         u2.setName("u2");
-        u2.setUserId(2);
+        u2.setUserId(1);
         Usertest u3 = new Usertest();
-        u3.setId(3l);
+        u3.setId(13);
         u3.setName("u3");
-        u3.setUserId(3);
+        u3.setUserId(2);
         Usertest u4 = new Usertest();
-        u4.setId(4l);
+        u4.setId(14);
         u4.setName("u4");
-        u4.setUserId(4);
+        u4.setUserId(2);
         list.add(u1);
         list.add(u2);
         list.add(u3);
@@ -47,5 +47,10 @@ public class UsertestController {
     @RequestMapping("/list")
     public List<Usertest> list(){
         return usertestService.list();
+    }
+
+    @RequestMapping("delete")
+    public void delete(){
+        usertestService.delete();
     }
 }

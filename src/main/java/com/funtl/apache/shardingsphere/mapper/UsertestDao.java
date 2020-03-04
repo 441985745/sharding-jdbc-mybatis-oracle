@@ -10,4 +10,6 @@ public interface UsertestDao {
     void insert(Usertest usertest);
 
     List<Usertest> list();
+
+    void delete();
 }

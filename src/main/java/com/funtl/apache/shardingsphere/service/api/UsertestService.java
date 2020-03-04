@@ -9,4 +9,6 @@ public interface UsertestService {
     public void insert(List<Usertest> list);
 
     List<Usertest> list();
+
+    void delete();
 }
