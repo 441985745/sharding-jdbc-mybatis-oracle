@@ -32,4 +32,9 @@ public class UsertestServiceImpl implements UsertestService {
     public void delete() {
         usertestDao.delete();
     }
+
+    @Override
+    public void insertTuser(List<Usertest> list) {
+        usertestDao.insertTuser(list);
+    }
 }

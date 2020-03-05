@@ -11,4 +11,6 @@ public interface UsertestService {
     List<Usertest> list();
 
     void delete();
+
+    void insertTuser(List<Usertest> list);
 }

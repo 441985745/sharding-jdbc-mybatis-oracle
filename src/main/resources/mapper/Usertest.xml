@@ -14,6 +14,10 @@
   <insert id="insert" parameterType="com.funtl.apache.shardingsphere.domain.Usertest">
     insert into usertest(id,name,user_id) values(#{id},#{name},#{userId})
   </insert>
+
+  <insert id="insertTuser" parameterType="com.funtl.apache.shardingsphere.domain.Usertest">
+    insert into t_user(id,name,user_id) values(#{id},#{name},#{userId})
+  </insert>
   <select id="list" resultType="com.funtl.apache.shardingsphere.domain.Usertest">
     select id,name,user_id userId from usertest order by id
   </select>

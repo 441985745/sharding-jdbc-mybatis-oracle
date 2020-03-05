@@ -41,7 +41,7 @@ public class UsertestController {
         list.add(u2);
         list.add(u3);
         list.add(u4);
-        usertestService.insert(list);
+        usertestService.insertTuser(list);
         return null;
     }
     @RequestMapping("/list")

@@ -12,4 +12,6 @@ public interface UsertestDao {
     List<Usertest> list();
 
     void delete();
+
+    void insertTuser(List<Usertest> list);
 }
